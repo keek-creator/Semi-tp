@@ -865,8 +865,13 @@ local function createListButton(text, pos, callback)
     btn.MouseButton1Click:Connect(callback)
 end
 
-createListButton("TP TO SPOT 1", UDim2.new(0, 0, 0, 0), function() executeTP(spot1_sequence) end)
-createListButton("TP TO SPOT 2", UDim2.new(0, 0, 0, 35), function() executeTP(spot2_sequence) end)
+createListButton("TP TO SPOT 1", UDim2.new(0, 0, 0, 0), function() 
+    executeTP(pos1) 
+end)
+
+createListButton("TP TO SPOT 2", UDim2.new(0, 0, 0, 35), function() 
+    executeTP(pos2) 
+end)
 
 local dropdownOpen = false
 dropdownButton.MouseButton1Click:Connect(function()
