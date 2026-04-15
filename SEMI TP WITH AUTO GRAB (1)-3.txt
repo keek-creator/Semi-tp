@@ -223,21 +223,12 @@ local function ResetToWork()
     end
 end
 
-local function executeTP(sequence)
+local function executeTP(pos)
     local char = player.Character
     local root = char and char:FindFirstChild("HumanoidRootPart")
-    local hum = char and char:FindFirstChildOfClass("Humanoid")
-    local backpack = player:FindFirstChild("Backpack")
 
-    if root and hum and backpack then
-        local carpet = backpack:FindFirstChild("Flying Carpet")
-        if carpet then
-            hum:EquipTool(carpet)
-        end
-        task.wait(0.05)
-        root.CFrame = sequence[1]
-        task.wait(0.1)
-        root.CFrame = sequence[2]
+    if root then
+        root.CFrame = CFrame.new(pos)
     end
 end
 
