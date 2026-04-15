@@ -10,8 +10,8 @@ local CoreGui = game:GetService("CoreGui")
 local player = Players.LocalPlayer
 
 
-local pos1 = Vector3.new(-366.18, -7.18, 24.97)            
-local pos2 = Vector3.new(-364.65, -7.18, 82.84)   
+local pos1 = Vector3.new(-364.65, -7.18, 82.84)         
+local pos2 = Vector3.new(-366.18, -7.18, 24.97)
 local standing1 = Vector3.new(-336.36, -4.59, 99.51)
 local standing2 = Vector3.new(-334.81, -4.59, 18.90)
 
